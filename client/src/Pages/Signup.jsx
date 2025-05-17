@@ -66,7 +66,7 @@ const Signup = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5050/api/auth/register",
+        "https://books-library-management-1.onrender.com/api/auth/register",
         {
           name: formData.name,
           email: formData.email,

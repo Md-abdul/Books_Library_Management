@@ -22,7 +22,7 @@ const AllBooks = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:5050/api/mybooks/");
+        const response = await axios.get("https://books-library-management-1.onrender.com/api/mybooks/");
         setBooks(response.data);
         setFilteredBooks(response.data);
       } catch (error) {
@@ -59,7 +59,7 @@ const AllBooks = () => {
 
     try {
       await axios.post(
-        "http://localhost:5050/api/mybooks/add",
+        "https://books-library-management-1.onrender.com/api/mybooks/add",
         {
           title: book.title,
           author: book.author,
